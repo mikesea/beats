@@ -1,0 +1,223 @@
+#drumMachine {
+  font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
+  max-width: 540px;
+  margin: 0px auto;
+  overflow: hidden;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.container:before,
+.container:after {
+  content: " ";
+  display: table;
+}
+
+.control.left {
+  float: left;
+}
+
+.control.right {
+  float: right;
+}
+
+.sequencer {
+  height: 50px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.bpm.control .actions {
+  text-align: center;
+}
+
+.bpm.control .actions > button {
+  width: 35px;
+  border: 2px outset buttonface;
+  text-align: center;
+  cursor: default;
+  box-sizing: border-box;
+}
+
+.headline {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  padding: 0px;
+  text-align: center;
+  box-shadow: none;
+  border: none;
+  margin-left: 0px;
+  z-index: -1;
+}
+
+.headline h1 {
+  margin-top: 8px;
+}
+
+button.action {
+  border-radius: 35px;
+  height: 45px;
+  padding: 5px;
+  background-color: #fff;
+  width: 45px;
+  margin-left: 5px;
+}
+
+.pulse {
+  background-color: #fff;
+  display: inline-block;
+  cursor: pointer;
+  margin: 3px;
+  width: 25px;
+  height: 25px;
+  border-radius: 15px;
+}
+
+.pulse.active {
+  border-color: black;
+}
+
+.pulse.pulsing {
+  height: 5px;
+}
+
+.track {
+  padding: 15px 20px 0px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.track-header.left {
+  float: left;
+}
+
+.track-header.right {
+  float: right;
+  position: relative;
+}
+
+.remove {
+  font-size: 25px;
+  position: absolute;
+  top: -8px;
+  right: 0;
+  cursor: pointer;
+}
+
+.volume {
+  margin-right: 25px;
+}
+
+.choose.track {
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.track-info {
+  width: 100%;
+}
+
+.track-pulses {
+  display: inline-block;
+  margin: 0px;
+  padding: 25px 0px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li.track:nth-child(3n + 1) {
+  background-color: #E91E63;
+}
+
+li.track:nth-child(3n + 1) .pulse {
+  background-color: #F8BBD0;
+}
+
+li.track:nth-child(3n + 1) .pulse.active {
+  background-color: #880E4F;
+}
+
+li.track:nth-child(3n + 2) {
+  background-color: #3F51B5;
+}
+
+li.track:nth-child(3n + 2) .pulse {
+  background-color: #C5CAE9;
+}
+
+li.track:nth-child(3n + 2) .pulse.active {
+  background-color: #1A237E;
+}
+
+li.track:nth-child(3n + 3) {
+  background-color: #00BCD4;
+}
+
+li.track:nth-child(3n + 3) .pulse {
+  background-color: #B2EBF2;
+}
+
+li.track:nth-child(3n + 3) .pulse.active {
+  background-color: #006064;
+}
+
+li.track:nth-child(3n + 4) {
+  background-color: #8BC34A;
+}
+
+li.track:nth-child(3n + 4) .pulse {
+  background-color: #DCEDC8;
+}
+
+li.track:nth-child(3n + 4) .pulse.active {
+  background-color: #33691E;
+}
+
+li.track:nth-child(3n + 5) {
+  background-color: #FFC107;
+}
+
+li.track:nth-child(3n + 5) .pulse {
+  background-color: #FFECB3;
+}
+
+li.track:nth-child(3n + 5) .pulse.active {
+  background-color: #FF6F00;
+}
+
+li.track:nth-child(3n + 6) {
+  background-color: #FF5722;
+}
+
+li.track:nth-child(3n + 6) .pulse {
+  background-color: #FFCCBC;
+}
+
+li.track:nth-child(3n + 6) .pulse.active {
+  background-color: #BF360C;
+}
+
+footer {
+  font-size: 12px;
+}
+
+/* Utils */
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}

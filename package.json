@@ -1,0 +1,33 @@
+{
+  "name": "808",
+  "version": "1.0.0",
+  "description": "Drum machine",
+  "main": "js/app.js",
+  "repository": "https://github.com/mikesea/sm-808",
+  "scripts": {
+    "test": "jest",
+    "start": "watchify -o js/bundle.js -v -d .",
+    "build": "NODE_ENV=production browserify . | uglifyjs -cm > js/bundle.min.js"
+  },
+  "author": "Mike Chlipala",
+  "license": "MIT",
+  "devDependencies": {
+    "browserify": "^6.2.0",
+    "jest-cli": "^0.1.18",
+    "reactify": "^0.15.2",
+    "uglify-js": "^2.4.15",
+    "watchify": "^2.1.1"
+  },
+  "dependencies": {
+    "flux": "^2.0.1",
+    "keymaster": "^1.6.2",
+    "lodash": "^2.4.1",
+    "object-assign": "^1.0.0",
+    "react": "^0.12.0"
+  },
+  "browserify": {
+    "transform": [
+      "reactify"
+    ]
+  }
+}
