@@ -1,9 +1,9 @@
 {
-  "name": "808",
-  "version": "1.0.0",
-  "description": "Drum machine",
+  "name": "Beats",
+  "version": "0.0.1",
+  "description": "A simple and fun drum sequencer.",
   "main": "js/app.js",
-  "repository": "https://github.com/mikesea/sm-808",
+  "repository": "https://github.com/mikesea/beats",
   "scripts": {
     "test": "jest",
     "start": "watchify -o js/bundle.js -v -d .",

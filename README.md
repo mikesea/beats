@@ -2,6 +2,8 @@
 
 A simple and fun drum sequencer.
 
+Built with [React](http://facebook.github.io/react/).
+
 ### Running locally
 
 ``` sh
