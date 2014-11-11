@@ -39,7 +39,7 @@ var Sequencer = React.createClass({
           </div>
 
           <div className='headline'>
-            <h1>Beats</h1>
+            <h1>SF-808</h1>
           </div>
         </div>
       </header>
