@@ -1,8 +1,9 @@
-#drumMachine {
+body {
   font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
   max-width: 540px;
-  margin: 0px auto;
   overflow: hidden;
+  margin: 0px auto;
+  padding: 5px 0px;
 }
 
 .container {
