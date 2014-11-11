@@ -50,13 +50,6 @@ var App = React.createClass({
             </select>
           </li>
         </ul>
-
-        <footer>
-          <ul>
-            <li>Created by: <a href='https://twitter.com/mikec' target='_blank'>Mike</a></li>
-            <li><a href='https://github.com/mikesea/sm-808' target='_blank'>Source</a></li>
-          </ul>
-        </footer>
       </div>
     );
   },
