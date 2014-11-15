@@ -74,6 +74,6 @@ AppDispatcher.register(function(payload) {
   }
 });
 
-PulseListStore.setMaxListeners(100);
+PulseListStore.setMaxListeners(500);
 
 module.exports = PulseListStore;

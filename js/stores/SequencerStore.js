@@ -109,6 +109,6 @@ AppDispatcher.register(function(payload) {
   }
 });
 
-Sequencer.setMaxListeners(100);
+Sequencer.setMaxListeners(500);
 
 module.exports = Sequencer;
