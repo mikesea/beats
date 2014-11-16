@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require('eventemitter2');
 var assign = require('object-assign');
 
 var Sequencer = assign({}, EventEmitter.prototype, {
@@ -109,6 +109,6 @@ AppDispatcher.register(function(payload) {
   }
 });
 
-Sequencer.setMaxListeners(500);
+Sequencer.setMaxListeners(0);
 
 module.exports = Sequencer;
