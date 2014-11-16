@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require('eventemitter2');
 var assign = require('object-assign');
 var _ = require('lodash');
 
@@ -39,6 +39,6 @@ var SoundStore = assign({}, EventEmitter.prototype, {
 
 });
 
-SoundStore.setMaxListeners(100);
+SoundStore.setMaxListeners(0);
 
 module.exports = SoundStore;

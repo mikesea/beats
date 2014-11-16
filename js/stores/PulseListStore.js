@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require('eventemitter2');
 var randKey = require('../utils/StringUtils').randKey;
 var assign = require('object-assign');
 var _ = require('lodash');
@@ -74,6 +74,6 @@ AppDispatcher.register(function(payload) {
   }
 });
 
-PulseListStore.setMaxListeners(500);
+PulseListStore.setMaxListeners(0);
 
 module.exports = PulseListStore;

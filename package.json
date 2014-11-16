@@ -17,6 +17,7 @@
     "webpack": "^1.4.13"
   },
   "dependencies": {
+    "eventemitter2": "^0.4.14",
     "flux": "^2.0.1",
     "keymaster": "^1.6.2",
     "lodash": "^2.4.1",

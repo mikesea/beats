@@ -1,5 +1,5 @@
 var AppDispatcher = require('../dispatcher/AppDispatcher');
-var EventEmitter = require('events').EventEmitter;
+var EventEmitter = require('eventemitter2');
 var SoundStore = require('./SoundStore');
 var randKey = require('../utils/StringUtils').randKey;
 var assign = require('object-assign');
@@ -59,6 +59,6 @@ AppDispatcher.register(function(payload) {
 });
 
 
-TrackStore.setMaxListeners(100);
+TrackStore.setMaxListeners(0);
 
 module.exports = TrackStore;
